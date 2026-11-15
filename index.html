@@ -2,99 +2,136 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="溫鴻小兒成人耳鼻喉科診所，提供兒童及成人耳鼻喉科診療與健康照護。">
-  <title>溫鴻小兒成人耳鼻喉科診所｜溫凰全院長</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-      color: #263238;
-      background: #f5f9fc;
-      line-height: 1.8;
-    }
-    header {
-      background: linear-gradient(135deg, #087e8b, #35b6a4);
-      color: white;
-      text-align: center;
-      padding: 48px 20px;
-    }
-    header h1 { font-size: 30px; margin: 0 0 10px; }
-    header p { margin: 0; font-size: 17px; }
-    nav {
-      background: white;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 8px #00000012;
-      z-index: 10;
-    }
-    nav a {
-      color: #087e8b;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
-    main { max-width: 1050px; margin: auto; padding: 24px 18px; }
-    section {
-      background: white;
-      padding: 28px;
-      margin: 22px 0;
-      border-radius: 16px;
-      box-shadow: 0 3px 14px #0000000b;
-    }
-    h2 { color: #087e8b; margin-top: 0; }
-    .hero { text-align: center; }
-    .hero h2 { font-size: 28px; }
-    .doctor {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      flex-wrap: wrap;
-    }
-    .doctor img {
-      width: 280px;
-      max-width: 100%;
-      border-radius: 14px;
-      object-fit: cover;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 16px;
-    }
-    .service {
-      background: #edf8f7;
-      padding: 18px;
-      border-radius: 12px;
-    }
-    .service h3 { color: #087e8b; margin-top: 0; }
-    .contact a {
-      color: #087e8b;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #087e8b;
-      color: white;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 24px; }
-      nav a { display: inline-block; margin: 4px 7px; }
-      section { padding: 20px; }
-      .doctor { justify-content: center; text-align: center; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="溫鴻小兒成人耳鼻喉科診所，提供兒童及成人耳鼻喉科專業診療。">
+<title>溫鴻小兒成人耳鼻喉科診所｜溫凰全院長</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+  color:#263238;
+  background:#f3f8fa;
+  line-height:1.8;
+}
+header{
+  background:linear-gradient(135deg,#087e8b,#35b6a4);
+  color:white;
+  text-align:center;
+  padding:35px 16px;
+}
+header h1{font-size:clamp(25px,4vw,38px);margin:0}
+header p{font-size:17px;margin:8px 0 0}
+nav{
+  background:white;
+  padding:14px 10px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 10px #00000012;
+}
+nav a{
+  display:inline-block;
+  color:#087e8b;
+  text-decoration:none;
+  font-weight:bold;
+  margin:4px 10px;
+}
+nav a:hover{color:#e58b36}
+main{max-width:1120px;margin:auto;padding:24px 18px}
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1.15fr;
+  gap:30px;
+  align-items:center;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 22px #0000000b;
+}
+.hero h2{
+  color:#087e8b;
+  font-size:clamp(27px,4vw,40px);
+  line-height:1.5;
+  margin:0 0 16px;
+}
+.hero p{font-size:18px}
+.hero img{
+  width:100%;
+  height:auto;
+  max-height:440px;
+  object-fit:contain;
+  border-radius:15px;
+  background:#f4f8f8;
+}
+.tagline{
+  display:inline-block;
+  background:#e8f7f4;
+  color:#087e8b;
+  border-radius:30px;
+  padding:6px 15px;
+  font-weight:bold;
+}
+section{
+  background:white;
+  padding:30px;
+  margin:24px 0;
+  border-radius:18px;
+  box-shadow:0 4px 18px #00000009;
+}
+h2.section-title{color:#087e8b;margin:0 0 18px;font-size:28px}
+.doctor{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  flex-wrap:wrap;
+}
+.doctor img{
+  width:260px;
+  max-width:100%;
+  height:auto;
+  border-radius:15px;
+}
+.doctor-info{flex:1;min-width:220px}
+.doctor-info h3{color:#087e8b;font-size:25px}
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:16px;
+}
+.service{
+  background:#edf8f7;
+  padding:20px;
+  border-radius:14px;
+}
+.service h3{color:#087e8b;margin-top:0}
+.contact a{color:#087e8b;font-weight:bold}
+footer{
+  background:#087e8b;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+footer p{margin:5px}
+@media(max-width:720px){
+  .hero{grid-template-columns:1fr;padding:22px}
+  .hero img{max-height:350px}
+  .hero-content{text-align:center}
+  section{padding:22px}
+  nav a{margin:3px 7px;font-size:14px}
+  .doctor{justify-content:center;text-align:center}
+}
+</style>
 </head>
+
 <body>
 
 <header>
   <h1>溫鴻小兒成人耳鼻喉科診所</h1>
-  <p>用心守護每一個家庭的呼吸與健康</p>
+  <p>專業醫療・親切照護・守護全家人的健康</p>
 </header>
 
 <nav>
@@ -107,37 +144,47 @@
 </nav>
 
 <main>
-  <section class="hero">
-    <h2>大人、小孩都照顧，健康大小事交給我們！</h2>
-    <p>從日常感冒、鼻過敏，到耳鼻喉專業檢查，陪伴您與家人守護健康。</p>
-  </section>
+
+  <div class="hero">
+    <div class="hero-content">
+      <span class="tagline">專業耳鼻喉科醫療照護</span>
+      <h2>大人、小孩都照顧，健康大小事交給我們！</h2>
+      <p>
+        從兒童到成人，從日常感冒到耳鼻喉專業檢查，
+        用心陪伴您與家人，守護每一天的健康。
+      </p>
+      <p><strong>溫凰全院長與醫療團隊，關心您的健康。</strong></p>
+    </div>
+    <img src="IMG_5671.jpeg" alt="溫凰全院長與溫鴻小兒成人耳鼻喉科診所形象照片">
+  </div>
 
   <section id="about">
-    <h2>診所介紹</h2>
+    <h2 class="section-title">診所介紹</h2>
     <p>
       溫鴻小兒成人耳鼻喉科診所，提供兒童及成人耳鼻喉科診療服務。
       我們重視每一位患者的需求，以專業、親切及細心的態度，
       陪伴您解決耳、鼻、喉及呼吸道相關問題。
     </p>
+    <p>不論大人或小孩，都能在這裡獲得用心的醫療照護。</p>
   </section>
 
   <section id="doctor">
-    <h2>院長介紹</h2>
+    <h2 class="section-title">院長介紹</h2>
     <div class="doctor">
-      <img src="IMG_5671.jpeg" alt="溫凰全院長與診所照片">
-      <div>
+      <img src="IMG_5671.jpeg" alt="溫凰全院長診所形象照片">
+      <div class="doctor-info">
         <h3>溫凰全院長</h3>
         <p>
           以專業醫療與親切服務為理念，
-          關心兒童、成人及每一位家庭成員的健康。
+          重視每一位患者的健康需求。
         </p>
-        <p>您的健康，是我們最重視的事。</p>
+        <p>從兒童到成人，用心守護每一個家庭。</p>
       </div>
     </div>
   </section>
 
   <section id="services">
-    <h2>醫療服務</h2>
+    <h2 class="section-title">醫療服務</h2>
     <div class="services">
       <div class="service">
         <h3>👂 耳科診療</h3>
@@ -167,7 +214,7 @@
   </section>
 
   <section id="health">
-    <h2>健康衛教</h2>
+    <h2 class="section-title">健康衛教</h2>
     <p>正確的健康知識，是守護健康的第一步。</p>
     <ul>
       <li>不要自行使用棉花棒深入耳道清潔。</li>
@@ -178,9 +225,8 @@
   </section>
 
   <section id="news">
-    <h2>最新消息</h2>
+    <h2 class="section-title">最新消息</h2>
     <p>診所最新門診時間、疫苗資訊及健康活動，將陸續在此更新。</p>
-    <p>也歡迎關注診所 Facebook 粉絲專頁，掌握最新公告。</p>
     <p>
       <a href="https://www.facebook.com/profile.php?id=100063965763822"
          target="_blank" rel="noopener">
@@ -190,16 +236,16 @@
   </section>
 
   <section id="contact" class="contact">
-    <h2>聯絡我們</h2>
+    <h2 class="section-title">聯絡我們</h2>
     <p>診所名稱：溫鴻小兒成人耳鼻喉科診所</p>
     <p>院長：溫凰全</p>
-    <p>地址及電話：請以診所確認後的正式資料為準。</p>
-    <p>門診時間：請以診所最新公告為準。</p>
+    <p>地址、電話及門診時間：以診所正式公告為準。</p>
   </section>
+
 </main>
 
 <footer>
-  <p>溫鴻小兒成人耳鼻喉科診所</p>
+  <p><strong>溫鴻小兒成人耳鼻喉科診所</strong></p>
   <p>關心您的身心健康 ❤️</p>
 </footer>
 
